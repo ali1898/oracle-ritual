@@ -1,30 +1,36 @@
 export const TEXTS = {
   fa: {
-    title: 'ذهن‌خوان',
-    subtitle: 'به یک عدد فکر کن… تا ذهنت رو بخونم',
-    guide: 'نیازی به گفتن یا نوشتن عدد نیست. فقط صادقانه پاسخ بده',
-    selectANumber: 'یک عدد از 1 تا 100 انتخاب کن',
-    hint: 'آیا عددی که در ذهن داری، در این کارت وجود دارد؟',
-    yes: 'بله',
-    no: 'خیر',
-    reveal: 'آشکارسازی حقیقت',
-    resultTitle: 'عدد تو این است',
-    resultSubtitle: 'همان عددی که از ابتدا در ذهنت بود',
-    restart: 'شروع دوباره',
+    title: 'اوراکل عمر',
+    subtitle:
+      'در سکوت به سالی از زندگی‌ات بیندیش… پرده‌ی راز به آرامی کنار خواهد رفت',
+    guide:
+      'نه کلامی نیاز است و نه نوشتاری؛ تنها صداقت پاسخ‌ها مسیر سرنوشت را روشن می‌کند',
+    selectANumber: 'از ژرفای ذهن، سالی از عمرت را چون رازی خاموش فراخوان',
+    hint: 'آیا پژواک سال‌های زندگی‌ات در این کارت پدیدار گشته است؟',
+    yes: 'آری',
+    no: 'نه',
+    reveal: 'گشایش راز عمر',
+    resultTitle: 'سن نهفته در ژرفای ذهن',
+    resultSubtitle: 'همان رازی که از آغاز در تقدیرت نوشته شده بود',
+    restart: 'آغاز دوباره آیین',
     footer: 'طراحی و پیاده‌سازی: علی احمدی‌نسب',
   },
   en: {
-    title: 'Astral Cipher',
-    subtitle: 'Think of a number… We will reveal it.',
-    guide: 'You don’t need to type or say your number. Just answer honestly.',
-    selectANumber: 'Select A Number between 1 & 100',
-    hint: 'Does your number appear on this card?',
+    title: 'Oracle of Age',
+    subtitle:
+      'In silence, summon a year of your life… the veil of mystery shall be lifted',
+    guide:
+      'No words, no writing—only the honesty of your answers lights the path of fate',
+    selectANumber:
+      'From the depths of thought, call forth an age as a hidden secret',
+    hint: 'Does the whisper of your years reveal itself upon this card?',
     yes: 'YES',
     no: 'NO',
-    reveal: 'Bind the Truth',
-    resultTitle: 'Your Number Is',
-    resultSubtitle: 'The number you had in mind all along.',
-    restart: 'Restart',
-    footer: 'Designed & Developed by Ali Ahmadi Nasab',
+    reveal: 'Unveil the Secret of Age',
+    resultTitle: 'The Age Concealed Within',
+    resultSubtitle:
+      'The secret inscribed in your destiny from the very beginning',
+    restart: 'Commence the Ritual Anew',
+    footer: 'Designed & Envisioned by Ali Ahmadi Nasab',
   },
 };
