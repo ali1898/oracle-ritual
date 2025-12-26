@@ -22,7 +22,7 @@ export class SetupComponent {
   ) {}
 
   startGame(digits: number) {
-    const max = digits === 1 ? 10 : digits === 2 ? 100 : 1000;
+    const max = digits === 1 ? 10 : digits === 2 ? 160 : 1000;
     this.gameService.initGame(max);
     this.router.navigate(['/game']);
   }

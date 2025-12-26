@@ -1,5 +1,17 @@
 <div class="center-page">
 
+    <!-- Progress Bar -->
+    <div class="progress">
+        <div class="progress__header">
+            <span>{{ answeredCount }} / {{ totalCount }}</span>
+            <span>{{ progressPercent }}%</span>
+        </div>
+        <div class="progress__bar">
+            <div class="progress__fill" [style.width.%]="progressPercent"></div>
+        </div>
+    </div>
+
+
     <div *ngFor="let card of cards">
         <app-cipher-card [card]="card" (answered)="onAnswered(card, $event)" />
     </div>

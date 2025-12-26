@@ -26,6 +26,23 @@ export class GameComponent {
     card.answer = value;
   }
 
+  // تعداد کارت‌ها
+  get totalCount(): number {
+    return this.cards.length;
+  }
+
+  // تعداد پاسخ‌های ثبت‌شده (YES یا NO)
+  get answeredCount(): number {
+    return this.cards.filter((c) => c.answer !== null).length;
+  }
+
+  // درصد پیشرفت (۰ تا ۱۰۰)
+  get progressPercent(): number {
+    return this.totalCount === 0
+      ? 0
+      : Math.round((this.answeredCount / this.totalCount) * 100);
+  }
+
   get canFinish(): boolean {
     return this.cards.every((c) => c.answer !== null);
   }
