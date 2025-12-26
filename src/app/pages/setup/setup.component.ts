@@ -3,11 +3,12 @@ import { GameService } from '../../core/services/game.service';
 import { Router } from '@angular/router';
 import { TEXTS } from '../../core/constants/texts';
 import { LanguageService } from '../../core/services/language.service';
+import { LayoutComponent } from "../../shared/layout/layout.component";
 
 @Component({
   selector: 'app-setup',
   standalone: true,
-  imports: [],
+  imports: [LayoutComponent],
   templateUrl: './setup.component.html',
   styleUrl: './setup.component.scss',
 })

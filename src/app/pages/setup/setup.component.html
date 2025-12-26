@@ -1,11 +1,13 @@
-<div class="center-page">
-    <h1>{{ langService.texts.title }}</h1>
-    <p>{{ langService.texts.subtitle }}</p>
-    <small>{{ langService.texts.guide }}</small>
+<app-layout>
+    <div class="center-page">
+        <h1>{{ langService.texts.title }}</h1>
+        <p>{{ langService.texts.subtitle }}</p>
+        <small>{{ langService.texts.guide }}</small>
 
-    <!-- <button (click)="startGame(1)">1 Digit</button> -->
-    <button (click)="startGame(2)">{{ langService.texts.selectANumber}}</button>
-    <!-- <button (click)="startGame(3)">3 Digits</button> -->
+        <!-- <button (click)="startGame(1)">1 Digit</button> -->
+        <button (click)="startGame(2)">{{ langService.texts.selectANumber}}</button>
+        <!-- <button (click)="startGame(3)">3 Digits</button> -->
 
-    <footer>{{ langService.texts.footer }}</footer>
-</div>
+        <footer>{{ langService.texts.footer }}</footer>
+    </div>
+</app-layout>

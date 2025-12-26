@@ -1,10 +1,12 @@
-<div class="center-page">
-    <h1>{{ langService.texts.resultTitle }}</h1>
-    <p>{{ langService.texts.resultSubtitle }}</p>
-    <!-- <small>{{ langService.texts. }}</small> -->
+<app-layout>
+    <div class="center-page">
+        <h1>{{ langService.texts.resultTitle }}</h1>
+        <p>{{ langService.texts.resultSubtitle }}</p>
+        <!-- <small>{{ langService.texts. }}</small> -->
 
-    <h1>{{ result }}</h1>
+        <h1>{{ result }}</h1>
 
-    <button (click)="restart()">{{ langService.texts.restart}}</button>
-    <footer>{{ langService.texts.footer }}</footer>
-</div>
+        <button (click)="restart()">{{ langService.texts.restart}}</button>
+        <footer>{{ langService.texts.footer }}</footer>
+    </div>
+</app-layout>
