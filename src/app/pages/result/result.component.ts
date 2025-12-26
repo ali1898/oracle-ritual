@@ -5,11 +5,10 @@ import { LanguageService } from '../../core/services/language.service';
 import { LayoutComponent } from "../../shared/layout/layout.component";
 
 @Component({
-  selector: 'app-result',
-  standalone: true,
-  imports: [LayoutComponent],
-  templateUrl: './result.component.html',
-  styleUrl: './result.component.scss',
+    selector: 'app-result',
+    imports: [LayoutComponent],
+    templateUrl: './result.component.html',
+    styleUrl: './result.component.scss'
 })
 export class ResultComponent {
   result = this.gameService.calculateResult();

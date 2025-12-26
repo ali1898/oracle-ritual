@@ -4,11 +4,10 @@ import { CommonModule } from '@angular/common';
 import { LanguageService } from '../../../core/services/language.service';
 
 @Component({
-  selector: 'app-cipher-card',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './cipher-card.component.html',
-  styleUrl: './cipher-card.component.scss',
+    selector: 'app-cipher-card',
+    imports: [CommonModule],
+    templateUrl: './cipher-card.component.html',
+    styleUrl: './cipher-card.component.scss'
 })
 export class CipherCardComponent {
   @Input({ required: true }) card!: Card;

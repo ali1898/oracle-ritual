@@ -7,11 +7,10 @@ import { CipherCardComponent } from '../../shared/components/cipher-card/cipher-
 import { LanguageService } from '../../core/services/language.service';
 
 @Component({
-  selector: 'app-game',
-  standalone: true,
-  imports: [CommonModule, CipherCardComponent],
-  templateUrl: './game.component.html',
-  styleUrl: './game.component.scss',
+    selector: 'app-game',
+    imports: [CommonModule, CipherCardComponent],
+    templateUrl: './game.component.html',
+    styleUrl: './game.component.scss'
 })
 export class GameComponent {
   cards: Card[] = this.gameService.cards;

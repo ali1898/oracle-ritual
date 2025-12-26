@@ -6,11 +6,10 @@ import { LanguageService } from '../../core/services/language.service';
 import { LayoutComponent } from "../../shared/layout/layout.component";
 
 @Component({
-  selector: 'app-setup',
-  standalone: true,
-  imports: [LayoutComponent],
-  templateUrl: './setup.component.html',
-  styleUrl: './setup.component.scss',
+    selector: 'app-setup',
+    imports: [LayoutComponent],
+    templateUrl: './setup.component.html',
+    styleUrl: './setup.component.scss'
 })
 export class SetupComponent {
   lang: 'fa' | 'en' = 'fa';
