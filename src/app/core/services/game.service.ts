@@ -11,7 +11,7 @@ export class GameService {
     this.cards = [];
     const bits = Math.ceil(Math.log2(maxNumber + 1));
 
-    for (let i = 0; i <= bits; i++) {
+    for (let i = 0; i < bits; i++) {
       const bitValue = 1 << i;
       const numbers = [];
 
