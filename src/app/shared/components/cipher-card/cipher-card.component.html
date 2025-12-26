@@ -5,11 +5,11 @@
 
     <div class="actions">
         <button [class.active]="card.answer === true" (click)="choose(true)">
-            YES
+            {{langService.texts.yes}}
         </button>
 
         <button [class.active]="card.answer === false" (click)="choose(false)">
-            NO
+            {{langService.texts.no}}
         </button>
     </div>
 </div>

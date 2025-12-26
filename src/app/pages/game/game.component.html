@@ -5,7 +5,9 @@
     </div>
 
     <button [disabled]="!canFinish" (click)="finish()">
-        Bind the Truth
+        {{ langService.texts.reveal}}
     </button>
+
+    <footer>{{ langService.texts.footer }}</footer>
 
 </div>

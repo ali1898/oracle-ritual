@@ -4,6 +4,7 @@ import { Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { Card } from '../../core/models/card.model';
 import { CipherCardComponent } from '../../shared/components/cipher-card/cipher-card.component';
+import { LanguageService } from '../../core/services/language.service';
 
 @Component({
   selector: 'app-game',
@@ -15,7 +16,11 @@ import { CipherCardComponent } from '../../shared/components/cipher-card/cipher-
 export class GameComponent {
   cards: Card[] = this.gameService.cards;
 
-  constructor(private gameService: GameService, private router: Router) {}
+  constructor(
+    public langService: LanguageService,
+    private gameService: GameService,
+    private router: Router
+  ) {}
 
   onAnswered(card: Card, value: boolean) {
     card.answer = value;

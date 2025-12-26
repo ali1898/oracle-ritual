@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { GameService } from '../../core/services/game.service';
 import { Router } from '@angular/router';
+import { TEXTS } from '../../core/constants/texts';
+import { LanguageService } from '../../core/services/language.service';
 
 @Component({
   selector: 'app-setup',
@@ -10,10 +12,17 @@ import { Router } from '@angular/router';
   styleUrl: './setup.component.scss',
 })
 export class SetupComponent {
-  constructor(private gameService: GameService, private router: Router) {}
+  lang: 'fa' | 'en' = 'fa';
+  texts = TEXTS[this.lang];
+
+  constructor(
+    public langService: LanguageService,
+    private gameService: GameService,
+    private router: Router
+  ) {}
 
   startGame(digits: number) {
-    const max = digits === 1 ? 9 : digits === 2 ? 99 : 999;
+    const max = digits === 1 ? 10 : digits === 2 ? 100 : 1000;
     this.gameService.initGame(max);
     this.router.navigate(['/game']);
   }
