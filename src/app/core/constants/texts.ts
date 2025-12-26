@@ -6,6 +6,7 @@ export const TEXTS = {
     guide:
       'نه کلامی نیاز است و نه نوشتاری؛ تنها صداقت پاسخ‌ها مسیر سرنوشت را روشن می‌کند',
     selectANumber: 'از ژرفای ذهن، سالی از عمرت را چون رازی خاموش فراخوان',
+    cardNumber: 'کارت',
     hint: 'آیا پژواک سال‌های زندگی‌ات در این کارت پدیدار گشته است؟',
     yes: 'آری',
     no: 'نه',
@@ -23,6 +24,7 @@ export const TEXTS = {
       'No words, no writing—only the honesty of your answers lights the path of fate',
     selectANumber:
       'From the depths of thought, call forth an age as a hidden secret',
+    cardNumber: 'Card',
     hint: 'Does the whisper of your years reveal itself upon this card?',
     yes: 'YES',
     no: 'NO',

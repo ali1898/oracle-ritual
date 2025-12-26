@@ -1,4 +1,7 @@
 <div class="cipher-card">
+
+    <div class="card-header">{{ langService.texts.cardNumber}} {{ card.id }}</div>
+
     <div class="numbers">
         <span *ngFor="let n of card.numbers">{{ n }}</span>
     </div>

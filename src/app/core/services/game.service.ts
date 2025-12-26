@@ -12,6 +12,7 @@ export class GameService {
     const bits = Math.ceil(Math.log2(maxNumber + 1));
 
     for (let i = 0; i < bits; i++) {
+      const id = i + 1;
       const bitValue = 1 << i;
       const numbers = [];
 
@@ -20,7 +21,7 @@ export class GameService {
           numbers.push(n);
         }
       }
-      this.cards.push(new Card(bitValue, numbers));
+      this.cards.push(new Card(id, bitValue, numbers));
     }
   }
 
