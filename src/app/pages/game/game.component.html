@@ -1,5 +1,16 @@
 <div class="center-page">
 
+    <!-- Game Title -->
+    <h1>{{ langService.texts.title }}</h1>
+    <h4>{{ langService.texts.guide }}</h4>
+
+    <!-- Cards Container with Scroll -->
+    <div class="cards-container">
+        <div class="cards-grid">
+            <app-cipher-card *ngFor="let card of cards" [card]="card" (answered)="onAnswered(card, $event)" />
+        </div>
+    </div>
+
     <!-- Progress Bar -->
     <div class="progress">
         <div class="progress__header">
@@ -10,16 +21,8 @@
             <div class="progress__fill" [style.width.%]="progressPercent"></div>
         </div>
     </div>
-
-
-    <div *ngFor="let card of cards">
-        <app-cipher-card [card]="card" (answered)="onAnswered(card, $event)" />
-    </div>
-
-    <button [disabled]="!canFinish" (click)="finish()">
-        {{ langService.texts.reveal}}
+    <!-- Final Button -->
+    <button class="bind-btn" [disabled]="!canFinish" (click)="finish()">
+        {{langService.texts.reveal}}
     </button>
-
-    <footer>{{ langService.texts.footer }}</footer>
-
 </div>

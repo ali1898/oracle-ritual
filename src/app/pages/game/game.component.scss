@@ -1,9 +1,3 @@
-.cards-grid {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  margin-bottom: 2rem;
-}
 /* Progress Bar */
 .progress {
   width: min(640px, 90vw);
@@ -32,4 +26,31 @@
   height: 100%;
   background: linear-gradient(90deg, #4caf50, #76c76f);
   width: 0%;
+}
+
+/* تنظیم Grid در صفحه Game */
+.center-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* بالا: Progress, وسط: کارت‌ها, پایین: دکمه */
+  align-items: center;
+  padding: 1rem;
+}
+
+.cards-container {
+  max-height: 60vh;
+  overflow-y: auto;
+  padding: 1rem;
+  border: 1px solid #333;
+  border-radius: 12px;
+  background-color: #101010;
+  width: min(900px, 95vw);
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+  justify-content: center;
 }
