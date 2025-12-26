@@ -19,6 +19,23 @@
   gap: 0.4rem;
   padding: 0.4rem;
   margin-bottom: 1rem;
+  /* ... سایر استایل‌ها ... */
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: #444 #151515;
+
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #151515;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #444;
+    border-radius: 4px;
+    border: 1px solid #333;
+  }
 }
 
 .numbers span {

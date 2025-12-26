@@ -46,6 +46,23 @@
   border-radius: 12px;
   background-color: #101010;
   width: min(900px, 95vw);
+  /* ... سایر استایل‌ها ... */
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: #444 #151515;
+
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #151515;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #444;
+    border-radius: 4px;
+    border: 1px solid #333;
+  }
 }
 
 .cards-grid {
