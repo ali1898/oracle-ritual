@@ -1,0 +1,37 @@
+.cipher-card {
+  padding: 1rem;
+  border-radius: 12px;
+  background: #ffffff;
+  border: 1px solid #593131;
+}
+
+.numbers {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 1rem;
+
+  span {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+
+  button {
+    padding: 0.4rem 1rem;
+    border-radius: 8px;
+    border: 1px solid #555;
+    background: transparent;
+    cursor: pointer;
+
+    &.active {
+      border-color: gold;
+      box-shadow: 0 0 6px rgba(255, 215, 0, 0.6);
+    }
+  }
+}

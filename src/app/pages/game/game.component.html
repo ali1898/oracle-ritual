@@ -1,13 +1,8 @@
 <p>game works!</p>
-<div *ngFor="let card of cards">
-    <h3>Bit {{ card.bitValue }}</h3>
-
-    <div class="numbers">
-        <span *ngFor="let n of card.numbers">{{ n }}</span>
-    </div>
-
-    <button (click)="answer(card, true)">YES</button>
-    <button (click)="answer(card, false)">NO</button>
+<div class="cards-grid">
+    <app-cipher-card *ngFor="let card of cards" [card]="card" (answered)="onAnswered(card, $event)" />
 </div>
 
-<button (click)="finish()">Bind the Truth</button>
+<button class="bind-btn" [disabled]="!canFinish" (click)="finish()">
+    Bind the Truth
+</button>

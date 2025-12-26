@@ -1,0 +1,20 @@
+<p>cipher-card</p>
+<div class="cipher-card">
+
+    <div class="numbers">
+        <span *ngFor="let n of card.numbers">
+            {{ n }}
+        </span>
+    </div>
+
+    <div class="actions">
+        <button [class.active]="card.answer === true" (click)="choose(true)">
+            YES
+        </button>
+
+        <button [class.active]="card.answer === false" (click)="choose(false)">
+            NO
+        </button>
+    </div>
+
+</div>
