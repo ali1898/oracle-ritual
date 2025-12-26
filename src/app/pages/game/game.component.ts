@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
 import { GameService } from '../../core/services/game.service';
 import { Router } from '@angular/router';
-import { CommonModule } from '@angular/common';
+
 import { Card } from '../../core/models/card.model';
 import { CipherCardComponent } from '../../shared/components/cipher-card/cipher-card.component';
 import { LanguageService } from '../../core/services/language.service';
 
 @Component({
     selector: 'app-game',
-    imports: [CommonModule, CipherCardComponent],
+    imports: [CipherCardComponent],
     templateUrl: './game.component.html',
     styleUrl: './game.component.scss'
 })

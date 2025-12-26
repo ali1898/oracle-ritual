@@ -1,18 +1,20 @@
 <div class="cipher-card">
 
-    <div class="card-header">{{ langService.texts.cardNumber}} {{ card.id }}</div>
+  <div class="card-header">{{ langService.texts.cardNumber}} {{ card.id }}</div>
 
-    <div class="numbers">
-        <span *ngFor="let n of card.numbers">{{ n }}</span>
-    </div>
+  <div class="numbers">
+    @for (n of card.numbers; track n) {
+      <span>{{ n }}</span>
+    }
+  </div>
 
-    <div class="actions">
-        <button [class.active]="card.answer === true" (click)="choose(true)">
-            {{langService.texts.yes}}
-        </button>
+  <div class="actions">
+    <button [class.active]="card.answer === true" (click)="choose(true)">
+      {{langService.texts.yes}}
+    </button>
 
-        <button [class.active]="card.answer === false" (click)="choose(false)">
-            {{langService.texts.no}}
-        </button>
-    </div>
+    <button [class.active]="card.answer === false" (click)="choose(false)">
+      {{langService.texts.no}}
+    </button>
+  </div>
 </div>
