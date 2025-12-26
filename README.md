@@ -1,27 +1,50 @@
-# AstralCipher
+# Astral Cipher 🔮
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.17.
+**Astral Cipher** یک پروژه‌ی Angular با فضایی رازآلود و آیینی است که تجربه‌ی کاربر را به شکل یک سفر ذهنی و پیشگویی طراحی می‌کند. این پروژه شامل صفحات Setup، Game و Result است که در یک باکس مرکزی و هماهنگ نمایش داده می‌شوند.
 
-## Development server
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## ✨ ویژگی‌ها
 
-## Code scaffolding
+- طراحی **مرکزی و واکنش‌گرا** با SCSS و Bootstrap
+- تجربه‌ی کاربری **آیینی و رازآلود** با متن‌های شاعرانه
+- ساختار ماژولار و قابل نگهداری در Angular
+- پشتیبانی از چند زبان (انگلیسی و فارسی)
+- کامپوننت مشترک برای **Layout مرکزی**
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+---
 
-## Build
+## 🚀 نصب و اجرا
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### پیش‌نیازها
 
-## Running unit tests
+- Node.js نسخه‌ی 18 یا بالاتر
+- Angular CLI هماهنگ با نسخه‌ی پروژه
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### مراحل نصب
 
-## Running end-to-end tests
+```bash
+# کلون کردن پروژه
+git clone https://github.com/USERNAME/oracle-ritual.git
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+# ورود به پوشه پروژه
+cd astral-cipher
 
-## Further help
+# نصب وابستگی‌ها
+npm install
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+# اجرای پروژه
+ng serve
+```
+
+# ساختار پروژه
+
+src/
+├── app/
+│ ├── shared/
+│ │ └── layout/ # کامپوننت باکس مرکزی
+│ ├── setup/ # صفحه آغازین
+│ ├── game/ # صفحه بازی
+│ └── result/ # صفحه نتیجه
+├── assets/ # منابع استاتیک
+└── styles.scss # استایل‌های کلی
