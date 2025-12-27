@@ -4,20 +4,21 @@ import { Router } from '@angular/router';
 
 import { Card } from '../../core/models/card.model';
 import { CipherCardComponent } from '../../shared/components/cipher-card/cipher-card.component';
+import { ProgressBarComponent } from '../../shared/components/progress-bar/progress-bar.component';
 import { LanguageService } from '../../core/services/language.service';
 
 @Component({
-    selector: 'app-game',
-    imports: [CipherCardComponent],
-    templateUrl: './game.component.html',
-    styleUrl: './game.component.scss'
+  selector: 'app-game',
+  imports: [CipherCardComponent, ProgressBarComponent],
+  templateUrl: './game.component.html',
+  styleUrl: './game.component.scss',
 })
 export class GameComponent {
   cards: Card[] = this.gameService.cards;
 
   constructor(
     public langService: LanguageService,
-    private gameService: GameService,
+    public gameService: GameService,
     private router: Router
   ) {}
 
