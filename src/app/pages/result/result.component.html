@@ -1,12 +1,23 @@
 <app-layout>
-    <div class="center-page">
-        <h1>{{ langService.texts.resultTitle }}</h1>
-        <p>{{ langService.texts.resultSubtitle }}</p>
-        <!-- <small>{{ langService.texts. }}</small> -->
+    <div class="app-page result-page">
 
-        <h1>{{ result }}</h1>
+        <header class="app-header">
+            <h1>{{ langService.texts.resultTitle }}</h1>
+        </header>
 
-        <button (click)="restart()">{{ langService.texts.restart}}</button>
-        <footer>{{ langService.texts.footer }}</footer>
+        <main class="app-main">
+            <div class="result-box">
+                <p class="guide-text">{{ langService.texts.resultSubtitle }}</p>
+                <div class="result-number">{{ result }}</div>
+                <button (click)="restart()">
+                    {{ langService.texts.restart }}
+                </button>
+            </div>
+        </main>
+
+        <footer class="app-footer">
+            {{ langService.texts.footer }}
+        </footer>
+
     </div>
 </app-layout>

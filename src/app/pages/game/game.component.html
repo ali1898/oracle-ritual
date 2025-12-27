@@ -1,8 +1,10 @@
 <div class="center-page">
 
   <!-- Game Title -->
-  <h1>{{ langService.texts.title }}</h1>
-  <h4>{{ langService.texts.guide }}</h4>
+  <header class="page-header">
+    <h1>{{ langService.texts.title }}</h1>
+    <h4>{{ langService.texts.guide }}</h4>
+  </header>
 
   <!-- Cards Container with Scroll -->
   <div class="cards-container">
@@ -21,5 +23,5 @@
   <button class="bind-btn" [disabled]="!canFinish" (click)="finish()">
     {{langService.texts.reveal}}
   </button>
-  <footer>{{ langService.texts.footer }}</footer>
+  <footer class="page-footer">{{ langService.texts.footer }}</footer>
 </div>

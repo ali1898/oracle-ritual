@@ -1,0 +1,62 @@
+.page-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 40px 24px;
+}
+
+/* HEADER */
+.page-header {
+  text-align: center;
+  text-shadow: 0 0 12px rgba(255, 255, 255, 0.25);
+}
+
+.page-header h1 {
+  font-size: clamp(28px, 5vw, 36px);
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  opacity: 0.75;
+  font-size: 15px;
+  text-shadow: 0 0 12px rgba(255, 255, 255, 0.25);
+}
+
+/* MAIN (مرکز صفحه) */
+.page-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  text-align: center;
+}
+
+/* BUTTON */
+.primary-btn {
+  padding: 14px 36px;
+  font-size: 16px;
+  border-radius: 12px;
+  cursor: pointer;
+
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  transition: all 0.25s ease;
+}
+
+.primary-btn:hover {
+  background: rgba(255, 255, 255, 0.08);
+  transform: translateY(-2px);
+}
+
+/* FOOTER */
+.page-footer {
+  font-size: 13px;
+  opacity: 0.5;
+  text-align: center;
+}
