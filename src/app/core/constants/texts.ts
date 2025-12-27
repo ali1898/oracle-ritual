@@ -1,38 +1,31 @@
 export const TEXTS = {
   fa: {
-    title: 'اوراکل عمر',
-    subtitle:
-      'در سکوت به سالی از زندگی‌ات بیندیش… پرده‌ی راز به آرامی کنار خواهد رفت',
-    guide:
-      'نه کلامی نیاز است و نه نوشتاری؛ تنها صداقت پاسخ‌ها مسیر سرنوشت را روشن می‌کند',
-    selectANumber: 'از ژرفای ذهن، سالی از عمرت را چون رازی خاموش فراخوان',
+    title: 'اوراکل سن',
+    subtitle: 'به عددی فکر کن؛ پاسخ از پیش روشن است',
+    guide: 'عدد را در ذهن نگه دار و تنها با آری یا نه پاسخ بده',
+    selectANumber: 'شروع بازی',
     cardNumber: 'کارت',
-    hint: 'آیا پژواک سال‌های زندگی‌ات در این کارت پدیدار گشته است؟',
-    yes: 'آری',
-    no: 'نه',
-    reveal: 'گشایش راز عمر',
-    resultTitle: 'سن نهفته در ژرفای ذهن',
-    resultSubtitle: 'همان رازی که از آغاز در تقدیرت نوشته شده بود',
-    restart: 'آغاز دوباره آیین',
+    yes: 'بله',
+    no: 'خیر',
+    reveal: 'نمایش نتیجه',
+    resultTitle: 'عدد نهایی',
+    resultSubtitle: 'همان عددی که از ابتدا در ذهن داشتی',
+    restart: 'شروع دوباره',
     footer: 'طراحی و پیاده‌سازی: علی احمدی‌نسب',
   },
+
   en: {
-    title: 'Oracle of Age',
-    subtitle:
-      'In silence, summon a year of your life… the veil of mystery shall be lifted',
-    guide:
-      'No words, no writing—only the honesty of your answers lights the path of fate',
-    selectANumber:
-      'From the depths of thought, call forth an age as a hidden secret',
+    title: 'Age Oracle',
+    subtitle: 'Think of a number. The answer is already known.',
+    guide: 'Keep the number in mind and answer only yes or no',
+    selectANumber: 'Start',
     cardNumber: 'Card',
-    hint: 'Does the whisper of your years reveal itself upon this card?',
-    yes: 'YES',
-    no: 'NO',
-    reveal: 'Unveil the Secret of Age',
-    resultTitle: 'The Age Concealed Within',
-    resultSubtitle:
-      'The secret inscribed in your destiny from the very beginning',
-    restart: 'Commence the Ritual Anew',
-    footer: 'Designed & Envisioned by Ali Ahmadi Nasab',
+    yes: 'Yes',
+    no: 'No',
+    reveal: 'Reveal Result',
+    resultTitle: 'Final Number',
+    resultSubtitle: 'The number you had in mind from the beginning',
+    restart: 'Restart',
+    footer: 'Designed & Developed by Ali Ahmadi Nasab',
   },
 };
