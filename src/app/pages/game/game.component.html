@@ -8,21 +8,15 @@
   <div class="cards-container">
     <div class="cards-grid">
       @for (card of cards; track card) {
-        <app-cipher-card [card]="card" (answered)="onAnswered(card, $event)" />
+      <app-cipher-card [card]="card" (answered)="onAnswered(card, $event)" />
       }
     </div>
   </div>
 
   <!-- Progress Bar -->
-  <div class="progress">
-    <div class="progress__header">
-      <span>{{ answeredCount }} / {{ totalCount }}</span>
-      <span>{{ progressPercent }}%</span>
-    </div>
-    <div class="progress__bar">
-      <div class="progress__fill" [style.width.%]="progressPercent"></div>
-    </div>
-  </div>
+  <app-progress-bar [current]="answeredCount" [total]="totalCount">
+  </app-progress-bar>
+
   <!-- Final Button -->
   <button class="bind-btn" [disabled]="!canFinish" (click)="finish()">
     {{langService.texts.reveal}}
