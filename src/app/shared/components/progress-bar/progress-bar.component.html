@@ -1,8 +1,8 @@
-<div class="progress-container">
-    <div class="progress-track">
-        <div class="progress-fill" [style.width.%]="(current / total) * 100">
+<div class="progress-container" data-cy="progress-container">
+    <div class="progress-track" data-cy="progress-track">
+        <div class="progress-fill" data-cy="progress-bar" [style.width.%]="progressPercent">
         </div>
     </div>
 
-    <h3>{{ current }} - {{ total }}</h3>
+    <h3 data-cy="progress-text">{{ current }} / {{ total }}</h3>
 </div>

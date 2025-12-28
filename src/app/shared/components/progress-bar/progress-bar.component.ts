@@ -16,4 +16,9 @@ export class ProgressBarComponent {
     if (this.total === 0) return 0;
     return Math.round((this.current / this.total) * 100);
   }
+
+  get progressPercent(): number {
+    if (this.total === 0) return 0;
+    return Math.round((this.current / this.total) * 100);
+  }
 }

@@ -1,19 +1,19 @@
 <app-layout>
     <div class="page-shell">
 
-        <header class="page-header">
-            <h1>{{ langService.texts.title }}</h1>
+        <header class="page-header" data-cy="setup-header">
+            <h1 data-cy="setup-title">{{ langService.texts.title }}</h1>
+            <p data-cy="setup-subtitle" class="subtitle">{{ langService.texts.subtitle }}</p>
         </header>
 
-        <main class="page-content">
-            <p class="subtitle">{{ langService.texts.subtitle }}</p>
+        <main class="page-content" data-cy="setup-main">
 
-            <button class="primary-btn" (click)="startGame(2)">
+            <button data-cy="setup-start-btn" class="primary-btn" (click)="startGame(2)">
                 {{ langService.texts.selectANumber }}
             </button>
         </main>
 
-        <footer class="page-footer">
+        <footer class="page-footer" data-cy="setup-footer">
             {{ langService.texts.footer }}
         </footer>
 

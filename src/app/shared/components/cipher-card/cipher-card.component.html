@@ -1,19 +1,20 @@
-<div class="cipher-card">
+<div class="cipher-card" data-cy="cipher-card">
+  <h3 data-cy="card-title">
+    {{ langService.texts.cardNumber }} {{ card.id }}
+  </h3>
 
-  <div class="card-header">{{ langService.texts.cardNumber}} {{ card.id }}</div>
-
-  <div class="numbers">
+  <div class="numbers" data-cy="card-numbers">
     @for (n of card.numbers; track n) {
-      <span>{{ n }}</span>
+    <span>{{ n }}</span>
     }
   </div>
 
   <div class="actions">
-    <button [class.active]="card.answer === true" (click)="choose(true)">
+    <button data-cy="card-yes-btn" [class.active]="card.answer === true" (click)="choose(true)">
       {{langService.texts.yes}}
     </button>
 
-    <button [class.active]="card.answer === false" (click)="choose(false)">
+    <button data-cy="card-no-btn" [class.active]="card.answer === false" (click)="choose(false)">
       {{langService.texts.no}}
     </button>
   </div>

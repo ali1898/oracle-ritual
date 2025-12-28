@@ -1,14 +1,14 @@
-<div class="center-page">
+<div class="center-page" data-cy="center-page">
 
   <!-- Game Title -->
-  <header class="page-header">
+  <header class="page-header" data-cy="page-header">
     <h1>{{ langService.texts.title }}</h1>
     <h4>{{ langService.texts.guide }}</h4>
   </header>
 
   <!-- Cards Container with Scroll -->
-  <div class="cards-container">
-    <div class="cards-grid">
+  <div class="cards-container" data-cy="cards-container">
+    <div class="cards-grid" data-cy="cards-grid">
       @for (card of cards; track card) {
       <app-cipher-card [card]="card" (answered)="onAnswered(card, $event)" />
       }
@@ -20,7 +20,7 @@
   </app-progress-bar>
 
   <!-- Final Button -->
-  <button class="bind-btn" [disabled]="!canFinish" (click)="finish()">
+  <button class="bind-btn" data-cy="bind-btn" [disabled]="!canFinish" (click)="finish()">
     {{langService.texts.reveal}}
   </button>
   <footer class="page-footer">{{ langService.texts.footer }}</footer>
